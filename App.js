@@ -32,7 +32,6 @@ const App: () => React$Node = () => {
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
         <Game />
-        {/* <Text>Yo23</Text> */}
       </SafeAreaView>
     </>
   );

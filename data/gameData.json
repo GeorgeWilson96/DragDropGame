@@ -9,7 +9,6 @@
                 {"amount":5, "width":50,"height":50}
             ],
             "items":[
-                {}
             ]
         },
         {
@@ -23,7 +22,9 @@
             "items":[
                 {
                     "image":"star.png",
-                    "amount":5
+                    "amount":5,
+                    "width":50,
+                    "height":50
                 }
             ]
         }

@@ -1,14 +1,14 @@
-import React from 'react';
+import React, { Component } from 'react';
 import {
-  ScrollView,
   View,
   Text,
 } from 'react-native';
 
-import { Loading } from './Utils';
 import API from '../API';
+import PuzzleBoard from './PuzzleBoard';
+import { Loading } from './Utils';
 
-class Game extends React.Component {
+class Game extends Component {
     constructor(props){
         super(props);
         this.state = {
@@ -25,7 +25,9 @@ class Game extends React.Component {
         if(!gameData && isLoading){
             return (<Loading />);
         }
-        return(<View><Text>Loaded</Text></View>)
+        return(<View>
+            {gameData.puzzleBoards.map((puzzleBoard)=><PuzzleBoard {...puzzleBoard} />)}
+        </View> )
     }
 }
 export default Game;

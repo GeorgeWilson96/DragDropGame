@@ -8,5 +8,8 @@ class API {
             );
         })
     }
+    getImageUrl(imageName){
+        return 'https://georaff.co.uk/tmp/' + imageName;
+    }
 }
 export default new API();
