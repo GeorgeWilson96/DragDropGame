@@ -31,6 +31,7 @@ const PuzzleBoard = (props)=>{
                 <FlexView>
                     {slotsState.map((slotState,index)=>(
                         <Slot
+                            key={index}
                             {...{
                                 slotState,
                                 slotsState,
@@ -47,10 +48,12 @@ const PuzzleBoard = (props)=>{
                 {itemsState.map((itemState,index)=>(
                     itemState == null?
                         <View
+                            key={index}
                             style={{width:50,height:50}}
                         />
                     :
                         <Item
+                            key={index}
                             itemState={itemState}
                         />
                     )

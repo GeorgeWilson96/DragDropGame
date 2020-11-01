@@ -11,7 +11,6 @@ const Slot = (props)=>{
     const {slotsState, setSlotsState, itemsState, setItemsState, slotState, index} = props;
     return(
     <Droppable
-        key={index}
         onDrop={({payload})=>{
             if(slotState.value)
                 return;

@@ -26,7 +26,7 @@ import {
 
 import Game from './components/Game';
 
-const App: () => React$Node = () => {
+const App = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />

@@ -26,7 +26,7 @@ class Game extends Component {
             return (<Loading />);
         }
         return(<View>
-            {gameData.puzzleBoards.map((puzzleBoard)=><PuzzleBoard {...puzzleBoard} />)}
+            {gameData.puzzleBoards.map((puzzleBoard, index)=><PuzzleBoard key={index} {...puzzleBoard} />)}
         </View> )
     }
 }
